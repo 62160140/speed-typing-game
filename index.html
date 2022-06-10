@@ -15,23 +15,25 @@
   <button id="level-btn" class="level-btn"><i class="fa-solid fa-gear"></i></button>
 
   <!-- !form level -->
-  <form id="settings" class="settings">
-    <label for="">ระดับความยาก: </label>
-    <select name="" id="level">
-      <option value="easy">ง่าย</option>
-      <option value="medium">ปานกลาง</option>
-      <option value="hard">ยาก</option>
-    </select>
-  </form>
+  <div id="settings" class="settings">
+    <form id="level-form" class="level-form">
+      <label for="">ระดับความยาก: </label>
+      <select name="" id="level">
+        <option value="easy">ง่าย</option>
+        <option value="medium">ปานกลาง</option>
+        <option value="hard">ยาก</option>
+      </select>
+    </form>
+  </div>
 
   <!-- !container -->
   <div class="container">
     <h2>เกมส์พิมเร็ว | Speed Typing</h2>
     <h1 id="word" class="word">เศรษฐี</h1>
-    <input type="text" name="" id="text"  autocomplete="off" placeholder="ป้อนคำที่เห็น">
+    <input type="text" name="" id="text" autocomplete="off" placeholder="ป้อนคำที่เห็น">
     <!-- ?เวลา -->
-    <p class="time-container">เวลา 10 วินาที </p>
-    <p class="score-container">10 คะแนน</p>
+    <p class="time-container"><span id="time">เวลา 10 วินาที</span></p>
+    <p class="score-container"><span id="score">10 คะแนน</span></p>
     <div id="over-btn" class="over-btn">
       <h2>จบเกมส์แล้วนะครับ!</h2>
     </div>
@@ -46,4 +48,5 @@
 
 <script src="script.js"></script>
 <link rel="stylesheet" href="style.css">
+
 </html>
